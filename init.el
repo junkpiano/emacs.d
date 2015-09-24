@@ -7,7 +7,6 @@
 
 (require 'cl)
 (require 'package)
-(require 'init-loader)
 
 ;; package initialize
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
@@ -17,46 +16,41 @@
 ;; package management
 (defvar installing-package-list
   '(
+    sbt-mode
+    scala-mode2
+    clojure-mode
+    coffee-mode
+    markdown-mode
+    yaml-mode
+    rust-mode
+    dockerfile-mode
+    feature-mode
     cider
     queue
     dash
-    clojure-mode
-    coffee-mode
+    w3m
     smex
     dash-at-point
     ensime
+    init-loader
     popup
     company
     auto-complete
     popup
-    feature-mode
     init-loader
     lispxmp
     magit
-    git-rebase-mode
-    git-commit-mode
-    markdown-mode
     open-junk-file
     ox-reveal
     org
     paredit
-    popup
     projectile-rails
-    rake
-    f
-    s
     auto-complete
     inf-ruby
     inflections
     projectile
     pkg-info
-    epl
-    queue
-    rake
-    sbt-mode
-    scala-mode2
     yasnippet
-    rust-mode
     exec-path-from-shell
     ))
 (let ((not-installed (loop for x in installing-package-list
@@ -68,6 +62,7 @@
       (package-install pkg))))
 
 ;; init-loader
+(require 'init-loader)
 (setq init-loader-show-log-after-init nil)
 (init-loader-load "~/.emacs.d/inits")
 
