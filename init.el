@@ -17,6 +17,7 @@
 (defvar installing-package-list
   '(
     sbt-mode
+    elixir-mode
     scala-mode2
     clojure-mode
     coffee-mode
