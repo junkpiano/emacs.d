@@ -17,6 +17,8 @@
 (defvar installing-package-list
   '(
     sbt-mode
+    racer-mode
+    eldoc-mode
     elixir-mode
     scala-mode2
     clojure-mode
