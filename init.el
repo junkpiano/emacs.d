@@ -17,8 +17,7 @@
 (defvar installing-package-list
   '(
     sbt-mode
-    racer-mode
-    eldoc-mode
+    racer
     elixir-mode
     scala-mode2
     clojure-mode
@@ -26,6 +25,7 @@
     markdown-mode
     yaml-mode
     rust-mode
+    web-mode
     dockerfile-mode
     feature-mode
     cider
@@ -56,6 +56,7 @@
     yasnippet
     exec-path-from-shell
     ))
+
 (let ((not-installed (loop for x in installing-package-list
 			   when (not (package-installed-p x))
 			   collect x)))
