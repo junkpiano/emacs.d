@@ -70,5 +70,7 @@
 (setq init-loader-show-log-after-init nil)
 (init-loader-load "~/.emacs.d/inits")
 
+(load-theme 'misterioso t)
+
 (provide 'init)
 ;;; init.el ends here

@@ -6,3 +6,6 @@
 
 (setq-default indent-tabs-mode nil)
 (setq tab-width 4) ; or any other preferred value
+
+;; autocomplete paired brackets
+(electric-pair-mode 1)
