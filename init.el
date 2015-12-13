@@ -16,6 +16,9 @@
 ;; package management
 (defvar installing-package-list
   '(
+    wdired
+    zenburn-theme
+    helm
     sbt-mode
     racer
     elixir-mode
@@ -43,6 +46,7 @@
     init-loader
     lispxmp
     magit
+    undo-tree
     open-junk-file
     ox-reveal
     org
@@ -70,7 +74,13 @@
 (setq init-loader-show-log-after-init nil)
 (init-loader-load "~/.emacs.d/inits")
 
-(load-theme 'misterioso t)
+;; TODO: move this to subdir later.
+(load-theme 'zenburn t)
+(global-undo-tree-mode)
+(require 'helm-config)
+(global-set-key (kbd "M-x") 'helm-M-x)
+(helm-mode 1)
+(global-set-key (kbd "C-c C-f") 'projectile-find-file)
 
 (provide 'init)
 ;;; init.el ends here
