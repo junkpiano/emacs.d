@@ -45,6 +45,7 @@
     popup
     init-loader
     lispxmp
+    gist
     magit
     undo-tree
     open-junk-file
@@ -81,6 +82,7 @@
 (global-set-key (kbd "M-x") 'helm-M-x)
 (helm-mode 1)
 (global-set-key (kbd "C-c C-f") 'projectile-find-file)
+(require 'generic-x)
 
 (provide 'init)
 ;;; init.el ends here
