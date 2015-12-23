@@ -30,3 +30,4 @@ tramp
 # cask packages
 .cask/
 ac-comphist.dat
+var

@@ -49,11 +49,13 @@
     magit
     undo-tree
     open-junk-file
+    js2-mode
     ox-reveal
     org
     paredit
     projectile-rails
     auto-complete
+    flycheck
     inf-ruby
     inflections
     projectile
@@ -80,9 +82,11 @@
 (global-undo-tree-mode)
 (require 'helm-config)
 (global-set-key (kbd "M-x") 'helm-M-x)
-(helm-mode 1)
+(helm-mode t)
 (global-set-key (kbd "C-c C-f") 'projectile-find-file)
 (require 'generic-x)
+(require 'org)
+(setq org-log-done t)
 
 (provide 'init)
 ;;; init.el ends here
