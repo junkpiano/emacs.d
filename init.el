@@ -1,7 +1,6 @@
 ;;; init.el --- My Emacs Setting
 
 ;;; Commentary:
-;;
 
 ;;; Code:
 
@@ -62,6 +61,10 @@
     pkg-info
     yasnippet
     exec-path-from-shell
+    evil
+    evil-rails
+    evil-nerd-commenter
+    evil-leader
     ))
 
 (let ((not-installed (loop for x in installing-package-list
