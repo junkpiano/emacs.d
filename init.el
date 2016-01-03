@@ -15,6 +15,7 @@
 ;; package management
 (defvar installing-package-list
   '(
+    php-mode
     wdired
     zenburn-theme
     helm
@@ -90,6 +91,9 @@
 (require 'generic-x)
 (require 'org)
 (setq org-log-done t)
+
+;; This gives you a tab of 2 spaces
+(custom-set-variables '(coffee-tab-width 4))
 
 (provide 'init)
 ;;; init.el ends here
