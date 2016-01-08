@@ -81,19 +81,5 @@
 (setq init-loader-show-log-after-init nil)
 (init-loader-load "~/.emacs.d/inits")
 
-;; TODO: move this to subdir later.
-(load-theme 'zenburn t)
-(global-undo-tree-mode)
-(require 'helm-config)
-(global-set-key (kbd "M-x") 'helm-M-x)
-(helm-mode t)
-(global-set-key (kbd "C-c C-f") 'projectile-find-file)
-(require 'generic-x)
-(require 'org)
-(setq org-log-done t)
-
-;; This gives you a tab of 2 spaces
-(custom-set-variables '(coffee-tab-width 4))
-
 (provide 'init)
 ;;; init.el ends here
