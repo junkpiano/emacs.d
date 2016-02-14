@@ -35,3 +35,5 @@
 
 (require 'auto-complete)
 (ac-config-default)
+
+(global-git-gutter-mode +1)

@@ -15,6 +15,7 @@
 ;; package management
 (defvar installing-package-list
   '(
+    git-gutter
     php-mode
     wdired
     zenburn-theme
