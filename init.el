@@ -53,7 +53,7 @@
     js2-mode
     ox-reveal
     org
-    paredit
+   paredit
     projectile-rails
     auto-complete
     flycheck
