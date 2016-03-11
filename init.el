@@ -15,6 +15,10 @@
 ;; package management
 (defvar installing-package-list
   '(
+    go-mode
+    swift-mode
+    typescript-mode
+    tide
     git-gutter
     php-mode
     wdired
@@ -53,7 +57,7 @@
     js2-mode
     ox-reveal
     org
-   paredit
+    paredit
     projectile-rails
     auto-complete
     flycheck
@@ -76,6 +80,13 @@
     (package-refresh-contents)
     (dolist (pkg not-installed)
       (package-install pkg))))
+
+;; set environmental path
+;; https://github.com/purcell/exec-path-from-shell
+;; only need exec-path-from-shell on OSX
+;; this hopefully sets up path and other vars better
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 ;; init-loader
 (require 'init-loader)

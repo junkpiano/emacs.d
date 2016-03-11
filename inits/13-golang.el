@@ -1,2 +1,2 @@
-(eval-after-load "go-mode"
-  '(require 'flymake-go))
+(require 'go-mode)
+(add-hook 'before-save-hook 'gofmt-before-save)
