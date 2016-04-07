@@ -15,7 +15,9 @@
 ;; package management
 (defvar installing-package-list
   '(
+    sr-speedbar
     go-mode
+    go-autocomplete
     swift-mode
     typescript-mode
     tide
@@ -44,7 +46,6 @@
     dash-at-point
     ensime
     init-loader
-    popup
     company
     auto-complete
     popup
@@ -58,12 +59,11 @@
     ox-reveal
     org
     paredit
+    projectile
     projectile-rails
-    auto-complete
     flycheck
     inf-ruby
     inflections
-    projectile
     pkg-info
     yasnippet
     exec-path-from-shell
