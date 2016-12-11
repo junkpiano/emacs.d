@@ -8,9 +8,12 @@
 (require 'package)
 
 ;; package initialize
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
+(setq package-archives
+      '(("gnu" . "http://elpa.gnu.org/packages/")
+	("melpa" . "http://melpa.org/packages/")
+	("org" . "http://orgmode.org/elpa/")))
+
 
 ;; package management
 (defvar installing-package-list
@@ -29,7 +32,6 @@
     sbt-mode
     racer
     elixir-mode
-    scala-mode2
     clojure-mode
     coffee-mode
     markdown-mode
@@ -45,7 +47,6 @@
     smex
     dash-at-point
     ensime
-    init-loader
     company
     auto-complete
     popup
@@ -67,10 +68,6 @@
     pkg-info
     yasnippet
     exec-path-from-shell
-    evil
-    evil-rails
-    evil-nerd-commenter
-    evil-leader
     ))
 
 (let ((not-installed (loop for x in installing-package-list
