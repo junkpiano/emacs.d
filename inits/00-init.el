@@ -9,3 +9,5 @@
 
 ;; autocomplete paired brackets
 (electric-pair-mode 1)
+(provide '00-init)
+;;; 00-init.el ends here

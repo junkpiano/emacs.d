@@ -92,3 +92,18 @@
 
 (provide 'init)
 ;;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(coffee-tab-width 4)
+ '(package-selected-packages
+   (quote
+    (exec-path-from-shell yasnippet pkg-info inflections inf-ruby flycheck projectile-rails projectile paredit ox-reveal js2-mode open-junk-file undo-tree magit gist lispxmp init-loader popup auto-complete company ensime dash-at-point smex w3m dash queue cider feature-mode dockerfile-mode web-mode rust-mode yaml-mode markdown-mode coffee-mode clojure-mode elixir-mode racer sbt-mode helm zenburn-theme php-mode git-gutter tide typescript-mode swift-mode go-autocomplete go-mode sr-speedbar))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
