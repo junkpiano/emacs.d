@@ -18,6 +18,7 @@
 ;; package management
 (defvar installing-package-list
   '(
+    neotree
     sr-speedbar
     go-mode
     go-autocomplete

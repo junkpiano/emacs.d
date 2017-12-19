@@ -16,6 +16,10 @@
 ;; This gives you a tab of 2 spaces
 (custom-set-variables '(coffee-tab-width 4))
 
+
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
 (provide '100-misc)
 
 ;;; 100-misc.el ends here
