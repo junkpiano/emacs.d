@@ -7,6 +7,8 @@
 (setq-default indent-tabs-mode nil)
 (setq tab-width 4) ; or any other preferred value
 
+(setq visible-bell t)
+
 ;; autocomplete paired brackets
 (electric-pair-mode 1)
 (provide '00-init)

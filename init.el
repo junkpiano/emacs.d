@@ -18,6 +18,7 @@
 ;; package management
 (defvar installing-package-list
   '(
+    vue-mode
     neotree
     sr-speedbar
     go-mode

@@ -16,6 +16,8 @@
 ;; This gives you a tab of 2 spaces
 (custom-set-variables '(coffee-tab-width 4))
 
+;; markdown
+(setq markdown-command "multimarkdown")
 
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
