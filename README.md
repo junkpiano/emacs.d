@@ -4,7 +4,7 @@ This is my personal emacs configuration.
 
 ## Usage
 
-    git clone https://github.com/yuchan/emacs.d ~/.emacs.d
+    git clone https://github.com/junkpiano/emacs.d ~/.emacs.d
 
 ## Notes
 
