@@ -22,7 +22,6 @@
     lsp-ui
     vue-mode
     neotree
-    sr-speedbar
     go-mode
     go-autocomplete
     swift-mode
@@ -103,7 +102,7 @@
  '(coffee-tab-width 4)
  '(package-selected-packages
    (quote
-    (exec-path-from-shell yasnippet pkg-info inflections inf-ruby flycheck projectile-rails projectile paredit ox-reveal js2-mode open-junk-file undo-tree magit gist lispxmp init-loader popup auto-complete company dash-at-point smex w3m dash queue cider feature-mode dockerfile-mode web-mode rust-mode yaml-mode markdown-mode coffee-mode clojure-mode elixir-mode racer sbt-mode helm zenburn-theme php-mode git-gutter tide typescript-mode swift-mode go-autocomplete go-mode sr-speedbar))))
+    (exec-path-from-shell yasnippet pkg-info inflections inf-ruby flycheck projectile-rails projectile paredit ox-reveal js2-mode open-junk-file undo-tree magit gist lispxmp init-loader popup auto-complete company dash-at-point smex w3m dash queue cider feature-mode dockerfile-mode web-mode rust-mode yaml-mode markdown-mode coffee-mode clojure-mode elixir-mode racer sbt-mode helm zenburn-theme php-mode git-gutter tide typescript-mode swift-mode go-autocomplete go-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
