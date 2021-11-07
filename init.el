@@ -20,6 +20,8 @@
   '(
     lsp-mode
     lsp-ui
+    lsp-treemacs
+    helm-lsp
     vue-mode
     neotree
     go-mode
@@ -46,6 +48,7 @@
     cider
     queue
     dash
+    dap-mode
     w3m
     smex
     dash-at-point
@@ -70,6 +73,10 @@
     pkg-info
     yasnippet
     exec-path-from-shell
+    helm-xref
+    which-key
+    hydra
+    avy
     ))
 
 (let ((not-installed (loop for x in installing-package-list
